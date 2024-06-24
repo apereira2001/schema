@@ -34,7 +34,7 @@ case "$COMANDO" in
     create) 
         check $# 3     
         # Criar um novo schema no banco de dados
-        psql -U postgres -d $DATABASE -c "CREATE SCHEMA $SCHEMA;"
+        psql -U postgres -d $BANCO_DE_DADOS -c "CREATE SCHEMA $ESQUEMA;"
         # Listar os esquemas do banco de dados
         psql -U postgres -d $BANCO_DE_DADOS -c "\dn"
         ;;

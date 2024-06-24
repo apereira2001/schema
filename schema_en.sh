@@ -34,7 +34,7 @@ case "$COMMAND" in
         # Create a new schema into database
         psql -U postgres -d $DATABASE -c "CREATE SCHEMA $SCHEMA;"
         # List the schemas in the database
-        psql -U postgres -d $BANCO_DE_DADOS -c "\dn"
+        psql -U postgres -d $DATABASE -c "\dn"
         ;;
     drop)
         check $# 3
